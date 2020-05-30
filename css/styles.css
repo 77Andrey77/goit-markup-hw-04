@@ -150,6 +150,14 @@ img {
 /* герой */
 .hero {
   text-align: center;
+  background-image: url(../image/hero-img.jpg);
+  width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-section {
+  padding-top: 200px;
 }
 
 .hero .title {
@@ -274,7 +282,7 @@ img {
   background-color: var(--accent-color);
 }
 .team .people {
-  width: calc((100 % - 90px) / 4);
+  width: calc((100% - 90px) / 4);
   /* width: 270px; */
   /* height: 422px; */
   background-color: #ffffff;
