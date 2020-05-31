@@ -130,6 +130,9 @@ img {
 }
 
 .auth-nav .link {
+  display: flex;
+  align-items: center;
+
   color: var(--text-color);
 
   font-weight: 500;
@@ -159,7 +162,7 @@ img {
 /* герой */
 .hero {
   text-align: center;
-  width: 1600px;
+  max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -285,14 +288,15 @@ img {
   padding-bottom: 24px;
 }
 .social-link .soc {
-  display: block;
-  width: 44px;
-  height: 44px;
-  padding: 12px 12px;
-  border-radius: 50%;
   margin-right: 11px;
 }
-
+.social-link a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+}
 .social-link .soc:last-child {
   margin-right: 0px;
 }
@@ -300,6 +304,7 @@ img {
 .social-link .soc:focus {
   background-color: var(--accent-color);
   --color1: #ffffff;
+  border-radius: 50%;
 }
 .team .people {
   width: calc((100% - 90px) / 4);
@@ -434,14 +439,18 @@ img {
 }
 
 .footer-soc .soc {
-  display: block;
+  margin-right: 10px;
+  --color1: #ffffff;
+}
+.footer-soc a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   padding: 12px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  margin-right: 10px;
-  --color1: #ffffff;
 }
 .footer-soc .soc:last-child {
   margin-right: 0px;
@@ -450,6 +459,7 @@ img {
 .footer-soc .soc:hover,
 .footer-soc .soc:focus {
   background-color: var(--accent-color);
+  border-radius: 50%;
 }
 
 .finish {
